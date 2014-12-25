@@ -9,17 +9,18 @@
 
     def start
       @word = current_word
+      puts @word
       @size = @word.length
       @guess = 7
       @count = 0
       @input = []
-      @display = []
       while @guess != 0
         first_time
         puts "\nEnter one character"
         c = gets.chomp
-        check_character(c)
+        place_character(c)
         check_gameover
+        puts @count
       end
     end
 
@@ -27,18 +28,15 @@
       f = File.open("5desk.txt",'r')
       word =  f.readlines.shuffle.first
       f.close
-     word
+      word.strip
     end
 
 
-    def check_character(c)
+    def place_character(c)
+      @display
       if @word.include?(c)
-        def check_buffer
-        if input.include?(c)
-          puts "Already entered"
-        else
-           (@input << c)
-        end
+        check_buffer(c)
+        @display = []
         @word.each_char do |char|
           if @input.include?(char)
             print "#{char} "
@@ -52,15 +50,16 @@
       else
         print "Wrong Character\n"
         puts @display.join()
+        @guess -= 1
       end
-      @guess -= 1
+     
       puts "\n#{@guess} guess left"
     end
 
 
     def first_time
-      if @guess == 7
-        for i in 0..@size-1
+      if @guess == 7 and @count == 0
+        for i in 0..(@size-1)
           print "_ ".chomp
         end
       end
@@ -68,6 +67,7 @@
 
 
     def check_gameover
+      puts "In gameover"
       if @guess == 0
         puts "Game Over!!, You Lose"
       end
@@ -75,6 +75,14 @@
         puts @word
         puts "You Won!!, Well Played!!"
       end
+    end
+
+    def check_buffer(c)
+        if @input.include?(c)
+          puts "Already entered"
+        else
+           (@input << c)
+        end
     end
 
 
