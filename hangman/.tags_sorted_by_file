@@ -3,7 +3,74 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
-Hangman	hangman.rb	/^  class Hangman$/;"	c
-initialize	hangman.rb	/^  	def initialize$/;"	f	class:Hangman
-start	hangman.rb	/^  	def start$/;"	f	class:Hangman
+Hangman	hangman.rb	/^class Hangman$/;"	c
+check_buffer	hangman.rb	/^    def check_buffer(c)$/;"	f	class:Hangman
+check_gameover	hangman.rb	/^    def check_gameover$/;"	f	class:Hangman
+current_word	hangman.rb	/^    def current_word$/;"	f	class:Hangman
+first_time	hangman.rb	/^    def first_time$/;"	f	class:Hangman
+initialize	hangman.rb	/^    def initialize$/;"	f	class:Hangman
+place_character	hangman.rb	/^    def place_character(c)$/;"	f	class:Hangman
+start	hangman.rb	/^    def start$/;"	f	class:Hangman
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+multiples	odin/Multiples.rb	/^	def multiples$/;"	f
+bubble_sort	odin/bubble_sort.rb	/^def bubble_sort(arr)$/;"	f
+caesar_cipher	odin/caesar_cipher.rb	/^def caesar_cipher(str, n)$/;"	f
+Enumerable	odin/enumerable_methods.rb	/^module Enumerable$/;"	m
+my_each	odin/enumerable_methods.rb	/^  def my_each$/;"	f	class:Enumerable
+my_each_with_index	odin/enumerable_methods.rb	/^  def my_each_with_index$/;"	f	class:Enumerable
+clean_zipcode	odin/event_manager/lib/event_manager.rb	/^def clean_zipcode(zipcode)$/;"	f
+fibbonacci_sum	odin/fibonacci_sum.rb	/^def fibbonacci_sum$/;"	f
+Hangman	odin/hangman/hangman.rb	/^  class Hangman$/;"	c
+check_buffer	odin/hangman/hangman.rb	/^    def check_buffer(c)$/;"	f	class:Hangman
+check_gameover	odin/hangman/hangman.rb	/^    def check_gameover$/;"	f	class:Hangman
+current_word	odin/hangman/hangman.rb	/^    def current_word$/;"	f	class:Hangman
+first_time	odin/hangman/hangman.rb	/^    def first_time$/;"	f	class:Hangman
+initialize	odin/hangman/hangman.rb	/^    def initialize$/;"	f	class:Hangman
+place_character	odin/hangman/hangman.rb	/^    def place_character(c)$/;"	f	class:Hangman
+start	odin/hangman/hangman.rb	/^    def start$/;"	f	class:Hangman
+leapyearfinder	odin/leapyear.rb	/^def leapyearfinder(startingyear, endyear)$/;"	f
+MasterMind	odin/mastermind.rb	/^class MasterMind$/;"	c
+check_code	odin/mastermind.rb	/^  def check_code(guess_array, code = nil)$/;"	f
+draw_board	odin/mastermind.rb	/^  def draw_board$/;"	f	class:MasterMind
+draw_colour_legend	odin/mastermind.rb	/^  def self.draw_colour_legend$/;"	F	class:MasterMind
+draw_feedback_legend	odin/mastermind.rb	/^  def draw_feedback_legend$/;"	f
+ended?	odin/mastermind.rb	/^  def ended?$/;"	f	class:MasterMind
+generate_all_codes	odin/mastermind.rb	/^  def generate_all_codes$/;"	f
+initialize	odin/mastermind.rb	/^  def initialize$/;"	f	class:MasterMind
+legal?	odin/mastermind.rb	/^  def legal?(code)$/;"	f
+make_guess	odin/mastermind.rb	/^  def make_guess(guess)$/;"	f	class:MasterMind
+pick_code	odin/mastermind.rb	/^  def pick_code$/;"	f
+solve	odin/mastermind.rb	/^  def solve(user_code)$/;"	f	class:MasterMind
+Player	odin/t1.rb	/^class Player$/;"	c
+TicTacGame	odin/t1.rb	/^class TicTacGame$/;"	c
+check_board	odin/t1.rb	/^  def check_board()$/;"	f	class:TicTacGame
+draw_board	odin/t1.rb	/^  def draw_board()$/;"	f	class:TicTacGame
+end_game	odin/t1.rb	/^  def end_game(winner)$/;"	f	class:TicTacGame
+get_position_num	odin/t1.rb	/^  def get_position_num(n, j)$/;"	f	class:TicTacGame
+has_free	odin/t1.rb	/^  def has_free()$/;"	f	class:TicTacGame
+initialize	odin/t1.rb	/^  def initialize()$/;"	f	class:TicTacGame
+initialize	odin/t1.rb	/^  def initialize(name, symbol)$/;"	f	class:Player
+make_move	odin/t1.rb	/^  def make_move(player, move_pos)$/;"	f	class:TicTacGame
+say_hi	odin/t1.rb	/^  def say_hi()$/;"	f	class:Player
+TicTacToe	odin/tic_tac_toe.rb	/^class TicTacToe$/;"	c
+change	odin/tic_tac_toe.rb	/^def change(@user)$/;"	f	class:TicTacToe.start.table_show
+initialize	odin/tic_tac_toe.rb	/^def initialize$/;"	f	class:TicTacToe
+move	odin/tic_tac_toe.rb	/^def move(@user, x, y)$/;"	f	class:TicTacToe.start
+start	odin/tic_tac_toe.rb	/^def start(user = @user1)$/;"	f	class:TicTacToe
+table_show	odin/tic_tac_toe.rb	/^def table_show$/;"	f	class:TicTacToe.start
+valid	odin/tic_tac_toe.rb	/^def valid$/;"	f	class:TicTacToe.start.table_show
+TicTacToe	odin/tic_tac_toe/lib/tic_tac_toe.rb	/^module TicTacToe$/;"	m
+Board	odin/tic_tac_toe/lib/tic_tac_toe/board.rb	/^  class Board$/;"	c	class:TicTacToe
+TicTacToe	odin/tic_tac_toe/lib/tic_tac_toe/board.rb	/^module TicTacToe$/;"	m
+default_grid	odin/tic_tac_toe/lib/tic_tac_toe/board.rb	/^    def default_grid$/;"	f	class:TicTacToe.Board
+initialize	odin/tic_tac_toe/lib/tic_tac_toe/board.rb	/^    def initialize(input = {})$/;"	f	class:TicTacToe.Board
+Cell	odin/tic_tac_toe/lib/tic_tac_toe/cell.rb	/^  class Cell$/;"	c	class:TicTacToe
+TicTacToe	odin/tic_tac_toe/lib/tic_tac_toe/cell.rb	/^module TicTacToe$/;"	m
+initialize	odin/tic_tac_toe/lib/tic_tac_toe/cell.rb	/^    def initialize(value = "")$/;"	f	class:TicTacToe.Cell
+Player	odin/tic_tac_toe/lib/tic_tac_toe/player.rb	/^  class Player$/;"	c	class:TicTacToe
+TicTacToe	odin/tic_tac_toe/lib/tic_tac_toe/player.rb	/^module TicTacToe$/;"	m
+initialize	odin/tic_tac_toe/lib/tic_tac_toe/player.rb	/^    def initialize(input)$/;"	f	class:TicTacToe.Player
+TicTacToe	odin/tic_tac_toe/lib/tic_tac_toe/version.rb	/^module TicTacToe$/;"	m
+TicTacToe	odin/tic_tac_toe/spec/board_spec.rb	/^module TicTacToe$/;"	m
+TicTacToe	odin/tic_tac_toe/spec/cell_spec.rb	/^module TicTacToe$/;"	m
+TicTacToe	odin/tic_tac_toe/spec/player_spec.rb	/^module TicTacToe$/;"	m
