@@ -19,6 +19,7 @@ class Hangman
         c = gets.chomp.downcase
         place_character(c)
         check_gameover
+        puts @count
       end
     end
 
@@ -28,7 +29,6 @@ class Hangman
       f.close
       word.strip
     end
-
 
     def place_character(c)
       @display = []
@@ -63,6 +63,7 @@ class Hangman
 
 
     def check_gameover
+      puts "In gameover"
       if @guess == 0
         puts @word
         puts "Game Over!!, You Lose"
